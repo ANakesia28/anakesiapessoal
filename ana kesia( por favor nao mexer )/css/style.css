@@ -1,0 +1,371 @@
+
+:root {
+    --blue: #9bbdce;
+    --blue-dark: #587d91;
+    --blue-light: #eaf3f7;
+    --beige: #f7f3ed;
+    --text: #555b60;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+}
+
+.hero {
+    min-height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background:
+        linear-gradient(rgba(239, 246, 249, .78), rgba(239, 246, 249, .85)),
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=85") center/cover;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--blue-dark);
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(42px, 8vw, 76px);
+    color: #496b7d;
+    font-weight: 400;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #b99d82;
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 540px;
+    margin: 0 auto 25px;
+}
+
+.hero-date {
+    margin-bottom: 30px;
+    color: var(--blue-dark);
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: var(--blue-dark);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn:hover {
+    background: #426477;
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.section {
+    padding: 85px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 5vw, 46px);
+    font-weight: 500;
+    color: var(--blue-dark);
+    margin: 12px 0 20px;
+}
+
+.countdown-section {
+    background: var(--blue-light);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.countdown div {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 95px;
+}
+
+.countdown strong {
+    display: block;
+    color: var(--blue-dark);
+    font-size: 30px;
+}
+
+.countdown span {
+    font-size: 11px;
+}
+
+.story p,
+.event-card,
+.section-description {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.heart {
+    color: #b99d82;
+    font-size: 38px;
+    margin-top: 20px;
+}
+
+.event {
+    background: var(--beige);
+}
+
+.event-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04);
+}
+
+.event-card strong {
+    color: var(--blue-dark);
+}
+
+.event-card p {
+    margin: 5px 0;
+}
+
+.gifts-section {
+    background: #f9fbfc;
+}
+
+.section-description {
+    margin-bottom: 30px;
+}
+
+.gift-categories {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+
+.gift-category {
+    background: white;
+    padding: 18px;
+    border: 1px solid #e2ebef;
+    border-radius: 12px;
+}
+
+.gift-category h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--blue-dark);
+    font-size: 23px;
+    font-weight: 600;
+    border-bottom: 1px solid #e5edf0;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.gift-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 5px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.gift-option:hover {
+    background: var(--blue-light);
+}
+
+.gift-option input {
+    accent-color: var(--blue-dark);
+    width: 16px;
+    height: 16px;
+}
+
+.gift-heart {
+    color: #b99d82;
+    margin-left: auto;
+}
+
+.gift-selection {
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 25px;
+    background: white;
+    border: 1px solid #e2ebef;
+    border-radius: 12px;
+}
+
+#gift-summary {
+    margin: 12px 0 20px;
+    font-size: 13px;
+}
+
+.pix-section {
+    background: var(--blue-light);
+}
+
+.pix-card {
+    background: white;
+    padding: 30px;
+    max-width: 400px;
+    margin: 30px auto 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.pix-card strong {
+    color: var(--blue-dark);
+    font-size: 20px;
+    overflow-wrap: anywhere;
+}
+
+.pix-owner {
+    font-size: 12px;
+}
+
+.rsvp-section form {
+    max-width: 430px;
+    margin: 30px auto 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rsvp-section label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--blue-dark);
+}
+
+.rsvp-section input,
+.rsvp-section select {
+    padding: 13px;
+    border: 1px solid #d8e3e9;
+    border-radius: 8px;
+    font: inherit;
+    background: white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rsvp-section button {
+    margin-top: 10px;
+}
+
+.verse {
+    background: var(--beige);
+    text-align: center;
+    padding: 55px 20px;
+    color: var(--blue-dark);
+}
+
+.verse p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    font-style: italic;
+}
+
+.verse span {
+    font-size: 12px;
+}
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background: #587d91;
+    color: white;
+}
+
+footer small {
+    font-size: 11px;
+}
+
+@media (max-width: 650px) {
+    .hero {
+        min-height: 540px;
+    }
+
+    .section {
+        padding: 65px 18px;
+    }
+
+    .gift-categories {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gift-category {
+        padding: 15px;
+    }
+
+    .countdown {
+        gap: 9px;
+    }
+
+    .countdown div {
+        min-width: 75px;
+        padding: 14px 10px;
+    }
+
+    .countdown strong {
+        font-size: 24px;
+    }
+
+    .gift-selection {
+        padding: 20px 15px;
+    }
+
+    .gift-selection .btn {
+        width: 100%;
+    }
+}
